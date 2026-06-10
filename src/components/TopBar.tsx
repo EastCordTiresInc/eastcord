@@ -1,6 +1,6 @@
 export default function TopBar() {
   return (
-    <div className="bg-brand-dark border-b border-gray-800 py-2 px-4 text-xs text-gray-400">
+    <div className="bg-[#0A0A0A] border-b border-white/10 py-2 px-4 text-xs text-gray-400">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4 md:justify-between">
         <div className="flex flex-wrap items-center gap-4">
           <span>

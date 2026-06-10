@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo_Black } from "next/font/google";
+import { Archivo_Black, Inter } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
@@ -9,6 +9,12 @@ const archivoBlack = Archivo_Black({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-archivo-black",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${archivoBlack.variable} bg-brand-dark text-white antialiased`}>
+      <body className={`${archivoBlack.variable} ${inter.variable} bg-white text-[#0D0D0D] antialiased font-[family-name:var(--font-inter)]`}>
         <TopBar />
         <Navbar />
         {children}

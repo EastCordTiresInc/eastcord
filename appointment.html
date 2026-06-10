@@ -4,27 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Appointment | Eastcord Tires — Milton, ON</title>
-  <meta name="description" content="Fast seasonal tire swaps. We'll get you in and out. Eastcord Tires, Milton, Ontario." />
+  <meta name="description" content="Our online booking system is being set up. Call us directly to schedule your changeover. Eastcord Tires, Milton, Ontario." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Inter',sans-serif;background:#0A0A0A;color:#fff;-webkit-font-smoothing:antialiased}
+    body{font-family:'Inter',-apple-system,'Segoe UI',sans-serif;background:#F7F7F8;color:#0D0D0D;-webkit-font-smoothing:antialiased}
     .wordmark{font-family:'Archivo Black',sans-serif;letter-spacing:-0.5px;text-decoration:none;font-size:22px}
     .east{color:#E11D2E}.cord{color:#fff}.tires{color:#D1D5DB}
-    nav{position:sticky;top:0;z-index:100;background:#111;border-bottom:1px solid #1F2937;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
-    nav a.link{color:#D1D5DB;text-decoration:none;font-size:14px;font-weight:500;margin-left:20px}
+    nav{position:sticky;top:0;z-index:100;background:#111;border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 16px rgba(0,0,0,0.25)}
+    nav a.link{color:#D1D5DB;text-decoration:none;font-size:14px;font-weight:500;margin-left:20px;transition:color .2s}
     nav a.link:hover{color:#fff}
-    nav a.book{background:#E11D2E;color:#fff;padding:8px 18px;border-radius:6px;font-weight:700;font-size:14px;margin-left:20px;text-decoration:none}
+    nav a.book{background:#E11D2E;color:#fff;padding:8px 18px;border-radius:8px;font-weight:600;font-size:14px;margin-left:20px;text-decoration:none;transition:background .2s}
     nav a.book:hover{background:#b91c1c}
     main{min-height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px}
-    .icon{font-size:64px;margin-bottom:24px}
-    h1{font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,5vw,3rem);color:#fff;margin-bottom:12px}
-    .soon{font-size:1.1rem;color:#9CA3AF;margin-bottom:12px}
-    .desc{font-size:0.9rem;color:#6B7280;max-width:420px;margin:0 auto 32px;line-height:1.7}
-    .btn{display:inline-block;background:#E11D2E;color:#fff;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;font-size:0.95rem;transition:background .2s}
+    .icon{font-size:56px;margin-bottom:24px}
+    h1{font-weight:700;font-size:clamp(2rem,5vw,2.8rem);color:#0D0D0D;margin-bottom:10px;letter-spacing:-0.02em}
+    .soon{font-size:1rem;color:#374151;margin-bottom:10px}
+    .desc{font-size:0.875rem;color:#6B7280;max-width:420px;margin:0 auto 32px;line-height:1.7}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .btn{display:inline-block;background:#E11D2E;color:#fff;font-weight:600;padding:12px 28px;border-radius:10px;text-decoration:none;font-size:0.9rem;transition:background .2s}
     .btn:hover{background:#b91c1c}
-    footer{border-top:1px solid #1F2937;padding:24px;text-align:center;color:#4B5563;font-size:0.8rem}
+    footer{border-top:1px solid #E5E7EB;background:#0A0A0A;padding:24px;text-align:center;color:#4B5563;font-size:0.8rem}
   </style>
 </head>
 <body>
@@ -41,8 +42,10 @@
     <div class="icon" aria-hidden="true">🔄</div>
     <h1>Book Appointment</h1>
     <p class="soon">Coming Soon</p>
-    <p class="desc"><!-- TODO: Add page content --> This page is on its way. Call us or visit us in Milton, ON for current availability.</p>
-    <a href="/" class="btn">← Back to Home</a>
+    <p class="desc"><!-- TODO: Add page content --> Our online booking system is being set up. Call us directly to schedule your changeover.</p>
+    <div class="btns">
+      <a href="/" class="btn">← Back to Home</a>
+    </div>
   </main>
   <footer>© 2026 Eastcord Tires. All rights reserved. — Milton, Ontario</footer>
 </body>

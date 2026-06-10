@@ -5,4 +5,19 @@
   --color-brand-dark: #0A0A0A;
   --color-brand-charcoal: #111111;
   --color-brand-card: #1A1A1A;
+  /* Light theme tokens */
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F7F7F8;
+  --color-border: #E5E7EB;
+  --color-heading: #0D0D0D;
+  --color-body: #374151;
+}
+
+@layer base {
+  body {
+    font-family: "Inter", -apple-system, "Segoe UI", sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
