@@ -1,0 +1,28 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "http://eastcordtires.ca/*"
+  to = "https://eastcordtires.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.eastcordtires.ca/*"
+  to = "https://eastcordtires.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.eastcordtires.ca/*"
+  to = "https://eastcordtires.ca/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
